@@ -1,6 +1,8 @@
 {{- $cdn := .Scratch.Get "cdn" | default dict -}}
 {{- $fingerprint := .Scratch.Get "fingerprint" -}}
 
+<link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen">
+
 {{- if not .Site.Params.app.noFavicon -}}
     {{- with .Site.Params.app.svgFavicon -}}
         <link rel="icon" href="{{ . }}">
