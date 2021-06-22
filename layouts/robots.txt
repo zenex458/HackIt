@@ -6,5 +6,7 @@ Disallow: /svg/
 Disallow: /lib/
 Disallow: /.nojekyll
 Disallow: /404.html
+Disallow: /tags/*
+Disallow: /page/
 
 Sitemap: {{ "/sitemap.xml" | absLangURL }}
