@@ -8,5 +8,7 @@ Disallow: /.nojekyll
 Disallow: /404.html
 Disallow: /tags/*
 Disallow: /page/
+Disallow: *.md
+Disallow: *.pdf
 
 Sitemap: {{ "/sitemap.xml" | absLangURL }}
