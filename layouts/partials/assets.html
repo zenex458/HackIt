@@ -3,6 +3,10 @@
 {{- $fingerprint := .Scratch.Get "fingerprint" -}}
 {{- $config := (.Scratch.Get "this").config -}}
 
+{{ if .Params.form }}
+<script type="text/javascript" src="/js/pageclip.min.js" charset="utf-8"></script>
+{{ end }}
+
 {{- /* Smooth Scroll */ -}}
 {{- $source := $cdn.smoothScrollJS | default "lib/smooth-scroll/smooth-scroll.min.js" -}}
 {{- dict "Source" $source "Fingerprint" $fingerprint | dict "Scratch" .Scratch "Data" | partial "scratch/script.html" -}}
