@@ -1,4 +1,13 @@
 // ==============================
 // Custom style
-// 自定义样式
 // ==============================
+
+form{
+  input[type=text], input[type=email], textarea {
+      width: 90%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      resize: vertical;
+    }
+}
