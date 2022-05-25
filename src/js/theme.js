@@ -18,9 +18,9 @@ class Util {
 
     animateCSS(element, animation, reserved, callback) {
         if (!Array.isArray(animation)) animation = [animation];
-        element.classList.add('animated', ...animation);
+        element.classList.add('animate__animated', ...animation);
         const handler = () => {
-            element.classList.remove('animated', ...animation);
+            element.classList.remove('animate__animated', ...animation);
             element.removeEventListener('animationend', handler);
             if (typeof callback === 'function') callback();
         };
