@@ -10,6 +10,8 @@
 
 @import "_page/index";
 
+@import "_partial/_shortcodes/toc";
+
 @import "_partial/header";
 @import "_partial/footer";
 @import "_partial/pagination";
@@ -17,3 +19,4 @@
 @import "_core/media";
 
 @import "_custom";
+
