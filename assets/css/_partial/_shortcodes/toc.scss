@@ -23,7 +23,6 @@
           color: $single-link-color-dark;
         }
       }
-
       ul {
         padding-left: 1.5rem;
       }
@@ -91,10 +90,10 @@
       .has-active > ul {
         display: block;
       }
+
     }
 
-    a.active {
-      font-weight: bold;
+    a {
       color: $single-link-color;
 
       [theme=dark] & {
@@ -139,7 +138,21 @@
       margin: 0;
       padding: .4rem 1rem .4rem 1.8rem;
     }
+    a. {
+      color: #a9a9b3;;
 
+      [theme=dark] & {
+        color: #a9a9b3;;
+      }
+
+      &::before {
+        color: $single-link-hover-color;
+
+        [theme=dark] & {
+          color: $single-link-hover-color-dark;
+        }
+      }
+    }
     [theme=dark] & {
       background-color: $code-background-color-dark;
     }
