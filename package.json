@@ -26,9 +26,6 @@
     "check": "htmlproofer exampleSite/public --check-html --allow-hash-href --empty-alt-ignore --disable-external",
     "copy": "rm -rf resources && cp -rf exampleSite/resources resources"
   },
-  "resolutions": {
-    "minimist": "^1.2.5"
-  },
   "husky": {
     "hooks": {
       "pre-commit": "npm run build && npm run copy && git add resources assets/js"
